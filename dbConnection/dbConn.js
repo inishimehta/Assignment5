@@ -1,19 +1,26 @@
-const Sequelize = require('sequelize');
+const Sequelize = require("sequelize");
 
 //setup db connection
-var sequelize = new Sequelize(process.env.database, process.env.user, process.env.password, {
+var sequelize = new Sequelize(
+  process.env.database,
+  process.env.user,
+  process.env.password,
+  {
     host: process.env.host,
-    dialect: 'postgres',
+    dialect: "postgres",
     port: 5432,
     dialectOptions: {
-        ssl: { rejectUnauthorized: false }
+      ssl: { rejectUnauthorized: false },
     },
     query: { raw: true },
-    logging: false
-});
+    logging: false,
+  }
+);
 
 //authenticate connection
-sequelize.authenticate().then(()=> console.log('Connection success.'))
-.catch((err)=>console.log("Unable to connect to DB.", err));
+sequelize
+  .authenticate()
+  .then(() => console.log("Connection success."))
+  .catch((err) => console.log("Unable to connect to DB.", err));
 
-module.exports = {sequelize, Sequelize};
+module.exports = { sequelize, Sequelize };
