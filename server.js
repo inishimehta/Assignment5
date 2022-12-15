@@ -1,12 +1,12 @@
 /*********************************************************************************
-* BTI325 – Assignment 5
-* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part
-* of this assignment has been copied manually or electronically from any other source
-* (including 3rd party web sites) or distributed to other students.
-*
-* Name: Nishi Mehta Student ID: 152-417-218 Date: 2022-12-14
-* Cyclic link: https://doubtful-ruby-pike.cyclic.app/
-********************************************************************************/ 
+ * BTI325 – Assignment 5
+ * I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part
+ * of this assignment has been copied manually or electronically from any other source
+ * (including 3rd party web sites) or distributed to other students.
+ *
+ * Name: Nishi Mehta Student ID: 152-417-218 Date: 2022-12-14
+ * Cyclic link: https://doubtful-ruby-pike.cyclic.app/
+ ********************************************************************************/
 
 //refactor the routes to put them in routes folder
 const express = require("express");

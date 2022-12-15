@@ -2,11 +2,11 @@ const Sequelize = require("sequelize");
 
 //setup db connection
 var sequelize = new Sequelize(
-  process.env.database,
-  process.env.user,
-  process.env.password,
+  "sftsgxgn",
+  "sftsgxgn",
+  "wxhrCdzRP-HC0rCWp4QusGzy0MMCz6ki",
   {
-    host: process.env.host,
+    host: "mouse.db.elephantsql.com",
     dialect: "postgres",
     port: 5432,
     dialectOptions: {
